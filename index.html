@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirección Aleatoria</title>
+    <script>
+        function redirigirAleatorio() {
+            // Lista de enlaces
+            const links = [
+                "https://www.google.com",
+                "https://www.youtube.com",
+                "https://www.wikipedia.org",
+                "https://www.github.com",
+                "https://www.nasa.gov"
+            ];
+            
+            // Elegir uno al azar
+            const randomLink = links[Math.floor(Math.random() * links.length)];
+            
+            // Redirigir
+            window.location.href = randomLink;
+        }
+    </script>
+</head>
+<body>
+    <h1>Click para ir a un enlace aleatorio</h1>
+    <button onclick="redirigirAleatorio()">Ir ahora</button>
+</body>
+</html>
